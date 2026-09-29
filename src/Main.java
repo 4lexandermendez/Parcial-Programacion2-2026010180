@@ -3,7 +3,8 @@ public class Main {
     public static void main(String[] args) {
         Empleado empleado = new Vendedor("Brayan", 1500.00);
 
-        // Se usa la estrategia por defecto
+        // Se mantiene la estrategia estándar (sin cambios)
+        System.out.println("=== Reporte de comisión ===");
         empleado.mostrarDetalle();
     }
 }

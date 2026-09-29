@@ -3,7 +3,8 @@ public class Main {
     public static void main(String[] args) {
         Empleado empleado = new Vendedor("Brayan", 1500.00);
 
-        // Se usa la estrategia por defecto
+        // Se cambia a la estrategia personalizada
+        empleado.cambiarEstrategia(new ComisionPersonalizada());
         empleado.mostrarDetalle();
     }
 }
